@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Petshop</title>
+        <link rel="stylesheet" href="assets/css/reset.css" />
+        <link rel="stylesheet" href="assets/css/styles.css" />
+        <!-- Embed Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+            rel="stylesheet"
+        />
+        <!--Favicon-->
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="./assets/favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./assets/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- Embed Fonts -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <body style="height: 5000px">
+            <header class="header">
+                <div class="header-topbar">
+                    <p class="topbar__tittle">Flash Sales Hôm Nay!</p>
+                    <a href="#!" class="topbar__btn"> Đặt hàng ngay! </a>
+                </div>
+                <div class="container">
+                    <div class="header__body">
+                        <!-- Logo -->
+                        <div class="header-logo">
+                            <a href="#!">
+                                <img
+                                    src="assets/img/mainlogo.jpg"
+                                    alt=""
+                                    class="logo"
+                                />
+                            </a>
+                        </div>
+                        <!-- Search -->
+                        <div class="header__search">
+                            <div class="search-form">
+                                <form action="">
+                                    <input
+                                        type="text"
+                                        class="search-form__input"
+                                        placeholder="Bạn cần tìm..."
+                                    />
+                                </form>
+                                <div class="search-form__btn">
+                                    <i
+                                        class="fa-solid fa-magnifying-glass search-form__icon"
+                                    ></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Sign Up & Cart  -->
+                        <div class="header__cta">
+                            <div class="header__account">
+                                <i class="fa-solid fa-user header-user"></i>
+                                <p class="user-title">Account</p>
+                                <div class="account-btn">
+                                    <button class="signin-btn btn">
+                                        Sign In
+                                    </button>
+                                    <button class="create-btn btn">
+                                        Create Account
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="header__cart">
+                                <i
+                                    class="fa-solid fa-cart-shopping header-cart"
+                                ></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Menu Dropdown -->
+            <div class="menu-catagory">
+                <ul class="menu__list">
+                    <!-- For Dog -->
+                    <li class="menu-item dog-cata">
+                        <h3>SẢN PHẨM CHO CHÓ</h3>
+                        <i class="fa-solid fa-chevron-down item-down"></i>
+                        <ul class="dog-cata__dropdown">
+                            <!-- Food -->
+                            <li class="dropdown__item food-dropdown__item">
+                                Thức ăn
+                                <i
+                                    class="fa-solid fa-chevron-right item-right"
+                                ></i>
+                                <ul class="food-type__list detail-list">
+                                    <li class="food-type__item detail-item">
+                                        <a href="#!"> Dry food </a>
+                                    </li>
+                                    <li class="food-type__item detail-item">
+                                        <a href="#!"> Wet food </a>
+                                    </li>
+                                    <li class="food-type__item detail-item">
+                                        <a href="#!">Puppy food </a>
+                                    </li>
+                                    <li class="food-type__item detail-item">
+                                        <a href="#!">Fresh & Frozen Food</a>
+                                    </li>
+                                    <li class="food-type__item detail-item">
+                                        <a href="#!">
+                                            Minimally Processed Food
+                                        </a>
+                                    </li>
+                                    <li class="food-type__item detail-item">
+                                        <a href="#!"> Veterianry Food </a>
+                                    </li>
+                                    <li class="food-type__item detail-item">
+                                        <a href="#!"> Food Toppers </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <!-- Light Food -->
+                            <li class="dropdown__item dog-dropdown__item">
+                                Thức ăn nhẹ
+                                <i
+                                    class="fa-solid fa-chevron-right item-right"
+                                ></i>
+                            </li>
+
+                            <!-- Treats -->
+                            <li class="dropdown__item treats-dropdown__item">
+                                Treats
+                                <i
+                                    class="fa-solid fa-chevron-right item-right"
+                                ></i>
+                                <ul class="treats-type__list detail-list">
+                                    <li class="treats-type__item detail-item">
+                                        <a href="#!">
+                                            Biscuits & Crunchy Treats</a
+                                        >
+                                    </li>
+                                    <li class="treats-type__item detail-item">
+                                        <a href="#!"> Soft & Chewy Treats</a>
+                                    </li>
+                                    <li class="treats-type__item detail-item">
+                                        <a href="#!"> Dental Treats</a>
+                                    </li>
+                                    <li class="treats-type__item detail-item">
+                                        <a href="#!"> Jerky Treats</a>
+                                    </li>
+                                    <li class="treats-type__item detail-item">
+                                        <a href="#!"> Training Treats</a>
+                                    </li>
+                                    <li class="treats-type__item detail-item">
+                                        <a href="#!"> Bones & Chews</a>
+                                    </li>
+                                    <li class="treats-type__item detail-item">
+                                        <a href="#!"> Ice Cream Treats</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <!-- Supplies -->
+                            <li class="dropdown__item supplies-dropdown__item">
+                                Supplies
+                                <i
+                                    class="fa-solid fa-chevron-right item-right"
+                                ></i>
+                                <ul class="supplies-type__list detail-list">
+                                    <li class="supplies-type__item detail-item">
+                                        <a href="#!"> Clothing & Accessories</a>
+                                    </li>
+                                    <li class="supplies-type__item detail-item">
+                                        <a href="#!"> Beds</a>
+                                    </li>
+                                    <li class="supplies-type__item detail-item">
+                                        <a href="#!"> Bowls & Feeders</a>
+                                    </li>
+                                    <li class="supplies-type__item detail-item">
+                                        <a href="#!">
+                                            Collars, Leashes, & Harnessess</a
+                                        >
+                                    </li>
+                                    <li class="supplies-type__item detail-item">
+                                        <a href="#!">
+                                            Crates, Kennels, & Gates</a
+                                        >
+                                    </li>
+                                    <li class="supplies-type__item detail-item">
+                                        <a href="#!">
+                                            Electronics & Technology</a
+                                        >
+                                    </li>
+                                    <li class="supplies-type__item detail-item">
+                                        <a href="#!"> Grooming</a>
+                                    </li>
+                                    <li class="supplies-type__item detail-item">
+                                        <a href="#!"> Cleaning & Potty</a>
+                                    </li>
+                                    <li class="supplies-type__item detail-item">
+                                        <a href="#!"> Toys</a>
+                                    </li>
+                                    <li class="supplies-type__item detail-item">
+                                        <a href="#!"> Training & Behavior</a>
+                                    </li>
+                                    <li class="supplies-type__item detail-item">
+                                        <a href="#!"> Travel & Outdoor</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <!-- Health  -->
+                            <li class="dropdown__item health-dropdown__item">
+                                Sức khỏe
+                                <i
+                                    class="fa-solid fa-chevron-right item-right"
+                                ></i>
+                                <ul class="health-type__list detail-list">
+                                    <li class="health-type__item detail-item">
+                                        <a href="#!">Pharmacy</a>
+                                    </li>
+                                    <li class="health-type__item detail-item">
+                                        <a href="#!">Flea & Tick</a>
+                                    </li>
+                                    <li class="health-type__item detail-item">
+                                        <a href="#!">Vitamins & Supplements</a>
+                                    </li>
+                                    <li class="health-type__item detail-item">
+                                        <a href="#!">Calming Aids</a>
+                                    </li>
+                                    <li class="health-type__item detail-item">
+                                        <a href="#!">Dental Care</a>
+                                    </li>
+                                    <li class="health-type__item detail-item">
+                                        <a href="#!">First Aid & Recovery</a>
+                                    </li>
+                                    <li class="health-type__item detail-item">
+                                        <a href="#!">DNA Kits</a>
+                                    </li>
+                                    <li class="health-type__item detail-item">
+                                        <a href="#!">Healthy Habits Hub</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <!-- Other -->
+                            <li class="dropdown__item dog-dropdown__item">
+                                Khác
+                                <i
+                                    class="fa-solid fa-chevron-right item-right"
+                                ></i>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- For Cat -->
+                    <li class="menu-item cat-cata">
+                        <h3>SẢN PHẨM CHO MÈO</h3>
+                        <i class="fa-solid fa-chevron-down item-down"></i>
+                        <ul class="cat-cata__dropdown">
+                            <!-- Food -->
+                            <li class="dropdown__item food-dropdown__item">
+                                Thức ăn
+                                <i
+                                    class="fa-solid fa-chevron-right item-right"
+                                ></i>
+                                <ul class="food-type__list detail-list">
+                                    <li class="food-type__item detail-item">
+                                        <a href="#!">Dry food</a>
+                                    </li>
+                                    <li class="food-type__item detail-item">
+                                        <a href="#!">Wet food</a>
+                                    </li>
+                                    <li class="food-type__item detail-item">
+                                        <a href="#!">Puppy food</a>
+                                    </li>
+                                    <li class="food-type__item detail-item">
+                                        <a href="#!">Fresh & Frozen Food</a>
+                                    </li>
+                                    <li class="food-type__item detail-item">
+                                        <a href="#!"
+                                            >Minimally Processed Food</a
+                                        >
+                                    </li>
+                                    <li class="food-type__item detail-item">
+                                        <a href="#!">Veterianry Food</a>
+                                    </li>
+                                    <li class="food-type__item detail-item">
+                                        <a href="#!">Food Toppers</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <!-- Light Food -->
+                            <li class="dropdown__item dog-dropdown__item">
+                                Thức ăn nhẹ
+                                <i
+                                    class="fa-solid fa-chevron-right item-right"
+                                ></i>
+                            </li>
+
+                            <!-- Treats -->
+                            <li class="dropdown__item treats-dropdown__item">
+                                Treats
+                                <i
+                                    class="fa-solid fa-chevron-right item-right"
+                                ></i>
+                                <ul class="treats-type__list detail-list">
+                                    <li class="treats-type__item detail-item">
+                                        <a href="#!"
+                                            >Biscuits & Crunchy Treats</a
+                                        >
+                                    </li>
+                                    <li class="treats-type__item detail-item">
+                                        <a href="#!">Soft & Chewy Treats</a>
+                                    </li>
+                                    <li class="treats-type__item detail-item">
+                                        <a href="#!">Dental Treats</a>
+                                    </li>
+                                    <li class="treats-type__item detail-item">
+                                        <a href="#!">Jerky Treats</a>
+                                    </li>
+                                    <li class="treats-type__item detail-item">
+                                        <a href="#!">Training Treats</a>
+                                    </li>
+                                    <li class="treats-type__item detail-item">
+                                        <a href="#!">Bones & Chews</a>
+                                    </li>
+                                    <li class="treats-type__item detail-item">
+                                        <a href="#!">Ice Cream Treats</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <!-- Supplies -->
+                            <li class="dropdown__item supplies-dropdown__item">
+                                Supplies
+                                <i
+                                    class="fa-solid fa-chevron-right item-right"
+                                ></i>
+                                <ul class="supplies-type__list detail-list">
+                                    <li class="supplies-type__item detail-item">
+                                        <a href="#!">Clothing & Accessories</a>
+                                    </li>
+                                    <li class="supplies-type__item detail-item">
+                                        <a href="#!">Beds</a>
+                                    </li>
+                                    <li class="supplies-type__item detail-item">
+                                        <a href="#!">Bowls & Feeders</a>
+                                    </li>
+                                    <li class="supplies-type__item detail-item">
+                                        <a href="#!"
+                                            >Collars, Leashes, & Harnessess</a
+                                        >
+                                    </li>
+                                    <li class="supplies-type__item detail-item">
+                                        <a href="#!"
+                                            >Crates, Kennels, & Gates</a
+                                        >
+                                    </li>
+                                    <li class="supplies-type__item detail-item">
+                                        <a href="#!"
+                                            >Electronics & Technology</a
+                                        >
+                                    </li>
+                                    <li class="supplies-type__item detail-item">
+                                        <a href="#!">Grooming</a>
+                                    </li>
+                                    <li class="supplies-type__item detail-item">
+                                        <a href="#!">Cleaning & Potty</a>
+                                    </li>
+                                    <li class="supplies-type__item detail-item">
+                                        <a href="#!">Toys</a>
+                                    </li>
+                                    <li class="supplies-type__item detail-item">
+                                        <a href="#!">Training & Behavior</a>
+                                    </li>
+                                    <li class="supplies-type__item detail-item">
+                                        <a href="#!">Travel & Outdoor</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <!-- Health -->
+                            <li class="dropdown__item health-dropdown__item">
+                                Sức khỏe
+                                <i
+                                    class="fa-solid fa-chevron-right item-right"
+                                ></i>
+                                <ul class="health-type__list detail-list">
+                                    <li class="health-type__item detail-item">
+                                        <a href="#!">Pharmacy</a>
+                                    </li>
+                                    <li class="health-type__item detail-item">
+                                        <a href="#!">Flea & Tick</a>
+                                    </li>
+                                    <li class="health-type__item detail-item">
+                                        <a href="#!">Vitamins & Supplements</a>
+                                    </li>
+                                    <li class="health-type__item detail-item">
+                                        <a href="#!">Calming Aids</a>
+                                    </li>
+                                    <li class="health-type__item detail-item">
+                                        <a href="#!">Dental Care</a>
+                                    </li>
+                                    <li class="health-type__item detail-item">
+                                        <a href="#!">First Aid & Recovery</a>
+                                    </li>
+                                    <li class="health-type__item detail-item">
+                                        <a href="#!">DNA Kits</a>
+                                    </li>
+                                    <li class="health-type__item detail-item">
+                                        <a href="#!">Healthy Habits Hub</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <!-- Other -->
+                            <li class="dropdown__item dog-dropdown__item">
+                                Khác
+                                <i
+                                    class="fa-solid fa-chevron-right item-right"
+                                ></i>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Promotion -->
+                    <li class="menu-item">
+                        <h3>KHUYẾN MÃI</h3>
+                    </li>
+
+                    <!-- Service -->
+                    <li class="menu-item service-cata">
+                        <h3>DỊCH VỤ</h3>
+                        <i class="fa-solid fa-chevron-down item-down"></i>
+                        <ul class="service-cata__dropdown">
+                            <!-- Services -->
+                            <li class="dropdown__item services-dropdown__item">
+                                Dịch Vụ
+                                <ul class="services-type__list detail-list">
+                                    <li class="services-type__item detail-item">
+                                        <a href="#!">Dog Grooming</a>
+                                    </li>
+                                    <li class="services-type__item detail-item">
+                                        <a href="#!">Dog Training</a>
+                                    </li>
+                                    <li class="services-type__item detail-item">
+                                        <a href="#!">Veterinary Services</a>
+                                    </li>
+                                    <li class="services-type__item detail-item">
+                                        <a href="#!">Pet Insurance</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <!-- Delivery -->
+                            <li class="dropdown__item delivery-dropdown__item">
+                                Phương Thức Giao Hàng
+                                <ul class="delivery-type__list detail-list">
+                                    <li class="delivery-type__item detail-item">
+                                        <a href="#!">Giao hàng lặp lại</a>
+                                    </li>
+                                    <li class="delivery-type__item detail-item">
+                                        <a href="#!">Nhận hàng tại lề đường</a>
+                                    </li>
+                                    <li class="delivery-type__item detail-item">
+                                        <a href="#!">Giao hàng trong ngày</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Support -->
+                    <li class="menu-item">
+                        <h3>HỖ TRỢ</h3>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Banner -->
+            <!-- <div class="banner-wrap"></div> -->
+        </body>
+    </head>
+</html>
