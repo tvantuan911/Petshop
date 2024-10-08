@@ -721,3 +721,13 @@ a {
     color: #fff;
     background: #333;
 }
+/* ===== Banner ad ====== */
+.ad-img {
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: .5s ease;
+}
+.ad-img:hover {
+    scale: 0.95;
+}
