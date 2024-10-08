@@ -786,3 +786,53 @@ a {
     background: #fff;
     color: #000;
 }
+/* ====== Feedback ====== */
+.feedback {
+    margin-top: 30px;
+}
+.feedback__heading {
+    text-align: center;
+    margin-bottom: 28px;
+}
+.feedback__tittle {
+    font-size: 3.6rem;
+    margin-bottom: 16px;
+}
+.feedback__desc {
+    color: #7a7a7a;
+}
+.feedback__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+}
+.feedback-item {
+    height: 270px;
+    padding: 24px 16px;
+    background: #fff7ec;
+    border-radius: 16px;
+}
+.feedback-item__vote {
+    display: flex;
+    gap: 10px;
+    font-size: 2rem;
+    color: #fdcc7f;
+}
+.feedback-item__content {
+    margin-top: 16px;
+    line-height: 1.5;
+}
+.feedback-item__author {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+.feedback-author__name {
+    margin: 0 5px 0 30px;
+}
+.feedback-author__avatar {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+}
