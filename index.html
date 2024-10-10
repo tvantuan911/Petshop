@@ -105,7 +105,12 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
-        <body style="height: 5000px">
+        <script>
+            function validateNumber(input) {
+                input.value = input.value.replace(/[^0-9]/g, ""); // Loại bỏ tất cả các ký tự không phải số
+            }
+        </script>
+        <body>
             <header class="header">
                 <div class="header-topbar">
                     <p class="topbar__tittle">Flash Sales Hôm Nay!</p>
@@ -314,10 +319,15 @@
                                 <p class="user-title">Account</p>
                                 <div class="account-btn">
                                     <button class="signin-btn btn">
-                                        Sign In
+                                        <a href="/assets/link/login.html"
+                                            >Sign In</a
+                                        >
                                     </button>
                                     <button class="create-btn btn">
-                                        Create Account
+                                        <a
+                                            href="/assets/link/create_account.html"
+                                            >Create Account</a
+                                        >
                                     </button>
                                 </div>
                             </div>
@@ -1204,12 +1214,35 @@ Thương hiệu ANIME"
                     <div class="dog-food__content food-content">
                         <div class="dog-food__list food-list">
                             <div class="dog-food__item food-item">
-                                <img
-                                    src="assets/img/dogfood-1.jpg"
-                                    alt="Thức ăn cho chó con PURINA PRO PLAN Small & Mini Puppy
-Thương hiệu PURINA PRO PLAN"
-                                    class="dogfood-item__img food-item__img"
-                                />
+                                <div class="food-item__thumbnail">
+                                    <img
+                                        src="assets/img/dogfood-1.jpg"
+                                        alt="Thức ăn cho chó con PURINA PRO PLAN Small & Mini Puppy
+                                    Thương hiệu PURINA PRO PLAN"
+                                        class="dogfood-item__img food-item__img"
+                                    />
+                                    <div class="food-item__cta">
+                                        <a href="#!" class="food-item__icon">
+                                            <i
+                                                class="fa-solid fa-cart-shopping food-item__cart"
+                                            ></i>
+                                            <span class="food-item__action-name"
+                                                >Tùy chọn</span
+                                            >
+                                        </a>
+                                        <a
+                                            href="#view-modal"
+                                            class="food-item__icon"
+                                        >
+                                            <i
+                                                class="fa-solid fa-eye food-item__view"
+                                            ></i>
+                                            <span class="food-item__action-name"
+                                                >Xem nhanh</span
+                                            >
+                                        </a>
+                                    </div>
+                                </div>
                                 <div class="dogfood-item__info food-item__info">
                                     <div
                                         class="dogfood-item__name line-clamp food-item__name"
@@ -1235,12 +1268,35 @@ Thương hiệu PURINA PRO PLAN"
                                 </div>
                             </div>
                             <div class="dog-food__item food-item">
-                                <img
-                                    src="assets/img/dogfood-2.jpg"
-                                    alt="Thức ăn cho chó Phốc Sóc MKB All Life Stages Formula Nutrition
-Thương hiệu MKB"
-                                    class="dogfood-item__img food-item__img"
-                                />
+                                <div class="food-item__thumbnail">
+                                    <img
+                                        src="assets/img/dogfood-2.jpg"
+                                        alt="Thức ăn cho chó Phốc Sóc MKB All Life Stages Formula Nutrition
+                                    Thương hiệu MKB"
+                                        class="dogfood-item__img food-item__img"
+                                    />
+                                    <div class="food-item__cta">
+                                        <a href="#!" class="food-item__icon">
+                                            <i
+                                                class="fa-solid fa-cart-shopping food-item__cart"
+                                            ></i>
+                                            <span class="food-item__action-name"
+                                                >Tùy chọn</span
+                                            >
+                                        </a>
+                                        <a
+                                            href="#view-modal"
+                                            class="food-item__icon"
+                                        >
+                                            <i
+                                                class="fa-solid fa-eye food-item__view"
+                                            ></i>
+                                            <span class="food-item__action-name"
+                                                >Xem nhanh</span
+                                            >
+                                        </a>
+                                    </div>
+                                </div>
                                 <div class="dogfood-item__info food-item__info">
                                     <div
                                         class="dogfood-item__name line-clamp food-item__name"
@@ -1265,12 +1321,35 @@ Thương hiệu MKB"
                                 </div>
                             </div>
                             <div class="dog-food__item food-item">
-                                <img
-                                    src="assets/img/dogfood-3.jpg"
-                                    alt="Thức ăn cho chó MKB MEC Wild Taste Nutrition for Poodle
-Thương hiệu MKB"
-                                    class="dogfood-item__img food-item__img"
-                                />
+                                <div class="food-item__thumbnail">
+                                    <img
+                                        src="assets/img/dogfood-3.jpg"
+                                        alt="Thức ăn cho chó MKB MEC Wild Taste Nutrition for Poodle
+                                    Thương hiệu MKB"
+                                        class="dogfood-item__img food-item__img"
+                                    />
+                                    <div class="food-item__cta">
+                                        <a href="#!" class="food-item__icon">
+                                            <i
+                                                class="fa-solid fa-cart-shopping food-item__cart"
+                                            ></i>
+                                            <span class="food-item__action-name"
+                                                >Tùy chọn</span
+                                            >
+                                        </a>
+                                        <a
+                                            href="#view-modal"
+                                            class="food-item__icon"
+                                        >
+                                            <i
+                                                class="fa-solid fa-eye food-item__view"
+                                            ></i>
+                                            <span class="food-item__action-name"
+                                                >Xem nhanh</span
+                                            >
+                                        </a>
+                                    </div>
+                                </div>
                                 <div class="dogfood-item__info food-item__info">
                                     <div
                                         class="dogfood-item__name line-clamp food-item__name"
@@ -1295,12 +1374,35 @@ Thương hiệu MKB"
                                 </div>
                             </div>
                             <div class="dog-food__item food-item">
-                                <img
-                                    src="assets/img/dogfood-4.jpg"
-                                    alt="Pate cho chó nước sốt vị thịt bò PEDIGREE Pouch Beef
-Thương hiệu PEDIGREE"
-                                    class="dogfood-item__img food-item__img"
-                                />
+                                <div class="food-item__thumbnail">
+                                    <img
+                                        src="assets/img/dogfood-4.jpg"
+                                        alt="Pate cho chó nước sốt vị thịt bò PEDIGREE Pouch Beef
+                                    Thương hiệu PEDIGREE"
+                                        class="dogfood-item__img food-item__img"
+                                    />
+                                    <div class="food-item__cta">
+                                        <a href="#!" class="food-item__icon">
+                                            <i
+                                                class="fa-solid fa-cart-shopping food-item__cart"
+                                            ></i>
+                                            <span class="food-item__action-name"
+                                                >Tùy chọn</span
+                                            >
+                                        </a>
+                                        <a
+                                            href="#view-modal"
+                                            class="food-item__icon"
+                                        >
+                                            <i
+                                                class="fa-solid fa-eye food-item__view"
+                                            ></i>
+                                            <span class="food-item__action-name"
+                                                >Xem nhanh</span
+                                            >
+                                        </a>
+                                    </div>
+                                </div>
                                 <div class="dogfood-item__info food-item__info">
                                     <div
                                         class="dogfood-item__name line-clamp food-item__name"
@@ -1325,11 +1427,34 @@ Thương hiệu PEDIGREE"
                                 </div>
                             </div>
                             <div class="dog-food__item food-item">
-                                <img
-                                    src="assets/img/dogfood-5.jpg"
-                                    alt="Sốt thịt cừu hầm lúa mạch rau củ cho chó JERHIGH Lamb Stew With Barley Rice Vegetable"
-                                    class="dogfood-item__img food-item__img"
-                                />
+                                <div class="food-item__thumbnail">
+                                    <img
+                                        src="assets/img/dogfood-5.jpg"
+                                        alt="Sốt thịt cừu hầm lúa mạch rau củ cho chó JERHIGH Lamb Stew With Barley Rice Vegetable"
+                                        class="dogfood-item__img food-item__img"
+                                    />
+                                    <div class="food-item__cta">
+                                        <a href="#!" class="food-item__icon">
+                                            <i
+                                                class="fa-solid fa-cart-shopping food-item__cart"
+                                            ></i>
+                                            <span class="food-item__action-name"
+                                                >Tùy chọn</span
+                                            >
+                                        </a>
+                                        <a
+                                            href="#view-modal"
+                                            class="food-item__icon"
+                                        >
+                                            <i
+                                                class="fa-solid fa-eye food-item__view"
+                                            ></i>
+                                            <span class="food-item__action-name"
+                                                >Xem nhanh</span
+                                            >
+                                        </a>
+                                    </div>
+                                </div>
                                 <div class="dogfood-item__info food-item__info">
                                     <div
                                         class="dogfood-item__name line-clamp food-item__name"
@@ -1355,12 +1480,35 @@ Thương hiệu PEDIGREE"
                                 </div>
                             </div>
                             <div class="dog-food__item food-item">
-                                <img
-                                    src="assets/img/dogfood-6.jpg"
-                                    alt="Xúc xích cho chó vị thịt gà JERHIGH Hot Dog Bar Chicken Meat
-Thương hiệu JERHIGH"
-                                    class="dogfood-item__img food-item__img"
-                                />
+                                <div class="food-item__thumbnail">
+                                    <img
+                                        src="assets/img/dogfood-6.jpg"
+                                        alt="Xúc xích cho chó vị thịt gà JERHIGH Hot Dog Bar Chicken Meat
+                                    Thương hiệu JERHIGH"
+                                        class="dogfood-item__img food-item__img"
+                                    />
+                                    <div class="food-item__cta">
+                                        <a href="#!" class="food-item__icon">
+                                            <i
+                                                class="fa-solid fa-cart-shopping food-item__cart"
+                                            ></i>
+                                            <span class="food-item__action-name"
+                                                >Tùy chọn</span
+                                            >
+                                        </a>
+                                        <a
+                                            href="#view-modal"
+                                            class="food-item__icon"
+                                        >
+                                            <i
+                                                class="fa-solid fa-eye food-item__view"
+                                            ></i>
+                                            <span class="food-item__action-name"
+                                                >Xem nhanh</span
+                                            >
+                                        </a>
+                                    </div>
+                                </div>
                                 <div class="dogfood-item__info food-item__info">
                                     <div
                                         class="dogfood-item__name line-clamp food-item__name"
@@ -1385,11 +1533,34 @@ Thương hiệu JERHIGH"
                                 </div>
                             </div>
                             <div class="dog-food__item food-item">
-                                <img
-                                    src="assets/img/dogfood-7.jpg"
-                                    alt="Bánh kem thạch cho chó vị gà việt quất JERHIGH Panna Cotta Chicken Blueberry Mousse"
-                                    class="dogfood-item__img food-item__img"
-                                />
+                                <div class="food-item__thumbnail">
+                                    <img
+                                        src="assets/img/dogfood-7.jpg"
+                                        alt="Bánh kem thạch cho chó vị gà việt quất JERHIGH Panna Cotta Chicken Blueberry Mousse"
+                                        class="dogfood-item__img food-item__img"
+                                    />
+                                    <div class="food-item__cta">
+                                        <a href="#!" class="food-item__icon">
+                                            <i
+                                                class="fa-solid fa-cart-shopping food-item__cart"
+                                            ></i>
+                                            <span class="food-item__action-name"
+                                                >Tùy chọn</span
+                                            >
+                                        </a>
+                                        <a
+                                            href="#view-modal"
+                                            class="food-item__icon"
+                                        >
+                                            <i
+                                                class="fa-solid fa-eye food-item__view"
+                                            ></i>
+                                            <span class="food-item__action-name"
+                                                >Xem nhanh</span
+                                            >
+                                        </a>
+                                    </div>
+                                </div>
                                 <div class="dogfood-item__info food-item__info">
                                     <div
                                         class="dogfood-item__name line-clamp food-item__name"
@@ -1415,12 +1586,35 @@ Thương hiệu JERHIGH"
                                 </div>
                             </div>
                             <div class="dog-food__item food-item">
-                                <img
-                                    src="assets/img/dogfood-8.jpg"
-                                    alt="Sữa bột cho chó BBN Goat’s Milk New Zealand
-Thương hiệu BBN"
-                                    class="dogfood-item__img food-item__img"
-                                />
+                                <div class="food-item__thumbnail">
+                                    <img
+                                        src="assets/img/dogfood-8.jpg"
+                                        alt="Sữa bột cho chó BBN Goat’s Milk New Zealand
+                                    Thương hiệu BBN"
+                                        class="dogfood-item__img food-item__img"
+                                    />
+                                    <div class="food-item__cta">
+                                        <a href="#!" class="food-item__icon">
+                                            <i
+                                                class="fa-solid fa-cart-shopping food-item__cart"
+                                            ></i>
+                                            <span class="food-item__action-name"
+                                                >Tùy chọn</span
+                                            >
+                                        </a>
+                                        <a
+                                            href="#view-modal"
+                                            class="food-item__icon"
+                                        >
+                                            <i
+                                                class="fa-solid fa-eye food-item__view"
+                                            ></i>
+                                            <span class="food-item__action-name"
+                                                >Xem nhanh</span
+                                            >
+                                        </a>
+                                    </div>
+                                </div>
                                 <div class="dogfood-item__info food-item__info">
                                     <div
                                         class="dogfood-item__name line-clamp food-item__name"
@@ -1449,6 +1643,93 @@ Thương hiệu BBN"
                 </div>
             </section>
 
+            <!-- View -->
+            <div class="view-product-modal overlay" id="view-modal">
+                <a href="#!" class="view-product__close"></a>
+                <section class="view-modal">
+                    <a href="#!" class="view-modal__close-btn">&times;</a>
+                    <div class="view-modal__image">
+                        <img
+                            src="assets/img/newproduct9.jpg"
+                            alt=""
+                            class="view-product__img"
+                        />
+                        <div class="view-product__list-img">
+                            <i class="fa-solid fa-chevron-left"></i>
+                            <img
+                                src="assets/img/newproduct9.jpg"
+                                alt=""
+                                class="view-product__img--small"
+                            />
+                            <img
+                                src="assets/img/small-img1.webp"
+                                alt=""
+                                class="view-product__img--small"
+                            />
+                            <img
+                                src="assets/img/small-img4.jpg"
+                                alt=""
+                                class="view-product__img--small"
+                            />
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </div>
+                    </div>
+                    <div class="view-modal__content">
+                        <h2 class="view-product__tittle">
+                            Túi đựng chó mèo ANIME hình họa tiết White Cats
+                            Thương hiệu ANIME
+                        </h2>
+                        <div class="view-product__info">
+                            Thương hiệu: Channel <br />
+                            Kho hàng: Còn hàng <br />
+                            Loại sản phẩm: Để trưng
+                        </div>
+                        <strong class="view-product__price"> 300.000₫ </strong>
+                        <div class="view-product__box-size">
+                            <span>Size: S <2kg </span>
+                            <div class="box-size__row">
+                                <span class="box-size__item">(S < 2kg) </span>
+                                <span class="box-size__item">(M < 5kg) </span>
+                                <span class="box-size__item sellout"
+                                    >(L < 8kg)
+                                </span>
+                            </div>
+                        </div>
+                        <div class="view-product__quantity">
+                            <span class="product-quantity__tittle">
+                                Số lượng:
+                            </span>
+                            <div class="quantity-cta">
+                                <button class="quantity-btn minus">
+                                    <i class="fa-solid fa-minus"></i>
+                                </button>
+                                <input
+                                    type="text"
+                                    id="number-input"
+                                    oninput="validateNumber(this)"
+                                    placeholder="1"
+                                />
+                                <button class="quantity-btn plus">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <span class="view-product__totalprice">
+                            Tổng số tiền:
+                            <strong>300.000₫</strong>
+                        </span>
+                        <div class="view-product__cta">
+                            <button class="view-product__addcart">
+                                THÊM VÀO GIỎ
+                            </button>
+                            <button class="view-product__love">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
             <!-- Food For Cat -->
             <section class="cat-food">
                 <div class="container">
@@ -1458,12 +1739,35 @@ Thương hiệu BBN"
                     <div class="cat-food__content food-content">
                         <div class="cat-food__list food-list">
                             <div class="cat-food__item food-item">
-                                <img
-                                    src="assets/img/catfood-1.jpg"
-                                    alt="Thức ăn cho mèo Anh lông ngắn CATIDEA Fairy Chef British Shorthair
-Thương hiệu CATIDEA"
-                                    class="catfood-item__img food-item__img"
-                                />
+                                <div class="food-item__thumbnail">
+                                    <img
+                                        src="assets/img/catfood-1.jpg"
+                                        alt="Thức ăn cho mèo Anh lông ngắn CATIDEA Fairy Chef British Shorthair
+                                    Thương hiệu CATIDEA"
+                                        class="catfood-item__img food-item__img"
+                                    />
+                                    <div class="food-item__cta">
+                                        <a href="#!" class="food-item__icon">
+                                            <i
+                                                class="fa-solid fa-cart-shopping food-item__cart"
+                                            ></i>
+                                            <span class="food-item__action-name"
+                                                >Tùy chọn</span
+                                            >
+                                        </a>
+                                        <a
+                                            href="#view-modal"
+                                            class="food-item__icon"
+                                        >
+                                            <i
+                                                class="fa-solid fa-eye food-item__view"
+                                            ></i>
+                                            <span class="food-item__action-name"
+                                                >Xem nhanh</span
+                                            >
+                                        </a>
+                                    </div>
+                                </div>
                                 <div class="catfood-item__info food-item__info">
                                     <div
                                         class="catfood-item__name line-clamp food-item__name"
@@ -1489,12 +1793,35 @@ Thương hiệu CATIDEA"
                                 </div>
                             </div>
                             <div class="cat-food__item food-item">
-                                <img
-                                    src="assets/img/catfood-2.jpg"
-                                    alt="Thức ăn cho mèo con vị cá hồi cá ngừ PURINA PRO PLAN Kitten Starter
-Thương hiệu PURINA PRO PLAN"
-                                    class="catfood-item__img food-item__img"
-                                />
+                                <div class="food-item__thumbnail">
+                                    <img
+                                        src="assets/img/catfood-2.jpg"
+                                        alt="Thức ăn cho mèo con vị cá hồi cá ngừ PURINA PRO PLAN Kitten Starter
+                                    Thương hiệu PURINA PRO PLAN"
+                                        class="catfood-item__img food-item__img"
+                                    />
+                                    <div class="food-item__cta">
+                                        <a href="#!" class="food-item__icon">
+                                            <i
+                                                class="fa-solid fa-cart-shopping food-item__cart"
+                                            ></i>
+                                            <span class="food-item__action-name"
+                                                >Tùy chọn</span
+                                            >
+                                        </a>
+                                        <a
+                                            href="#view-modal"
+                                            class="food-item__icon"
+                                        >
+                                            <i
+                                                class="fa-solid fa-eye food-item__view"
+                                            ></i>
+                                            <span class="food-item__action-name"
+                                                >Xem nhanh</span
+                                            >
+                                        </a>
+                                    </div>
+                                </div>
                                 <div class="catfood-item__info food-item__info">
                                     <div
                                         class="catfood-item__name line-clamp food-item__name"
@@ -1520,12 +1847,35 @@ Thương hiệu PURINA PRO PLAN"
                                 </div>
                             </div>
                             <div class="cat-food__item food-item">
-                                <img
-                                    src="assets/img/catfood-3.jpg"
-                                    alt="Thức ăn sấy khô cho mèo thịt thật CATIDEA Fairy Chef Freeze Dried Raw 6in1
-Thương hiệu CATIDEA"
-                                    class="catfood-item__img food-item__img"
-                                />
+                                <div class="food-item__thumbnail">
+                                    <img
+                                        src="assets/img/catfood-3.jpg"
+                                        alt="Thức ăn sấy khô cho mèo thịt thật CATIDEA Fairy Chef Freeze Dried Raw 6in1
+                                    Thương hiệu CATIDEA"
+                                        class="catfood-item__img food-item__img"
+                                    />
+                                    <div class="food-item__cta">
+                                        <a href="#!" class="food-item__icon">
+                                            <i
+                                                class="fa-solid fa-cart-shopping food-item__cart"
+                                            ></i>
+                                            <span class="food-item__action-name"
+                                                >Tùy chọn</span
+                                            >
+                                        </a>
+                                        <a
+                                            href="#view-modal"
+                                            class="food-item__icon"
+                                        >
+                                            <i
+                                                class="fa-solid fa-eye food-item__view"
+                                            ></i>
+                                            <span class="food-item__action-name"
+                                                >Xem nhanh</span
+                                            >
+                                        </a>
+                                    </div>
+                                </div>
                                 <div class="catfood-item__info food-item__info">
                                     <div
                                         class="catfood-item__name line-clamp food-item__name"
@@ -1551,12 +1901,35 @@ Thương hiệu CATIDEA"
                                 </div>
                             </div>
                             <div class="cat-food__item food-item">
-                                <img
-                                    src="assets/img/catfood-4.jpg"
-                                    alt="Nước sốt pate cho mèo CIAO vị ức gà và thanh cua
-Thương hiệu CIAO"
-                                    class="catfood-item__img food-item__img"
-                                />
+                                <div class="food-item__thumbnail">
+                                    <img
+                                        src="assets/img/catfood-4.jpg"
+                                        alt="Nước sốt pate cho mèo CIAO vị ức gà và thanh cua
+                                    Thương hiệu CIAO"
+                                        class="catfood-item__img food-item__img"
+                                    />
+                                    <div class="food-item__cta">
+                                        <a href="#!" class="food-item__icon">
+                                            <i
+                                                class="fa-solid fa-cart-shopping food-item__cart"
+                                            ></i>
+                                            <span class="food-item__action-name"
+                                                >Tùy chọn</span
+                                            >
+                                        </a>
+                                        <a
+                                            href="#view-modal"
+                                            class="food-item__icon"
+                                        >
+                                            <i
+                                                class="fa-solid fa-eye food-item__view"
+                                            ></i>
+                                            <span class="food-item__action-name"
+                                                >Xem nhanh</span
+                                            >
+                                        </a>
+                                    </div>
+                                </div>
                                 <div class="catfood-item__info food-item__info">
                                     <div
                                         class="catfood-item__name line-clamp food-item__name"
@@ -1581,12 +1954,35 @@ Thương hiệu CIAO"
                                 </div>
                             </div>
                             <div class="cat-food__item food-item">
-                                <img
-                                    src="assets/img/catfood-5.jpg"
-                                    alt="Snack bánh thưởng cho mèo CIAO Seafood Scallop vị hải sản sò điệp
-Thương hiệu CIAO"
-                                    class="catfood-item__img food-item__img"
-                                />
+                                <div class="food-item__thumbnail">
+                                    <img
+                                        src="assets/img/catfood-5.jpg"
+                                        alt="Snack bánh thưởng cho mèo CIAO Seafood Scallop vị hải sản sò điệp
+                                    Thương hiệu CIAO"
+                                        class="catfood-item__img food-item__img"
+                                    />
+                                    <div class="food-item__cta">
+                                        <a href="#!" class="food-item__icon">
+                                            <i
+                                                class="fa-solid fa-cart-shopping food-item__cart"
+                                            ></i>
+                                            <span class="food-item__action-name"
+                                                >Tùy chọn</span
+                                            >
+                                        </a>
+                                        <a
+                                            href="#view-modal"
+                                            class="food-item__icon"
+                                        >
+                                            <i
+                                                class="fa-solid fa-eye food-item__view"
+                                            ></i>
+                                            <span class="food-item__action-name"
+                                                >Xem nhanh</span
+                                            >
+                                        </a>
+                                    </div>
+                                </div>
                                 <div class="catfood-item__info food-item__info">
                                     <div
                                         class="catfood-item__name line-clamp food-item__name"
@@ -1612,12 +2008,35 @@ Thương hiệu CIAO"
                                 </div>
                             </div>
                             <div class="cat-food__item food-item">
-                                <img
-                                    src="assets/img/catfood-6.jpg"
-                                    alt="Bánh thưởng cho mèo vị bạc hà MEOW FUN Peppermint Cod
-Thương hiệu BUDGE"
-                                    class="catfood-item__img food-item__img"
-                                />
+                                <div class="food-item__thumbnail">
+                                    <img
+                                        src="assets/img/catfood-6.jpg"
+                                        alt="Bánh thưởng cho mèo vị bạc hà MEOW FUN Peppermint Cod
+                                    Thương hiệu BUDGE"
+                                        class="catfood-item__img food-item__img"
+                                    />
+                                    <div class="food-item__cta">
+                                        <a href="#!" class="food-item__icon">
+                                            <i
+                                                class="fa-solid fa-cart-shopping food-item__cart"
+                                            ></i>
+                                            <span class="food-item__action-name"
+                                                >Tùy chọn</span
+                                            >
+                                        </a>
+                                        <a
+                                            href="#view-modal"
+                                            class="food-item__icon"
+                                        >
+                                            <i
+                                                class="fa-solid fa-eye food-item__view"
+                                            ></i>
+                                            <span class="food-item__action-name"
+                                                >Xem nhanh</span
+                                            >
+                                        </a>
+                                    </div>
+                                </div>
                                 <div class="catfood-item__info food-item__info">
                                     <div
                                         class="catfood-item__name line-clamp food-item__name"
@@ -1642,12 +2061,35 @@ Thương hiệu BUDGE"
                                 </div>
                             </div>
                             <div class="cat-food__item food-item">
-                                <img
-                                    src="assets/img/catfood-7.jpg"
-                                    alt="Catnip cho mèo dạng que BIOLINE Catnip Dental Stick
-Thương hiệu BIOLINE"
-                                    class="catfood-item__img food-item__img"
-                                />
+                                <div class="food-item__thumbnail">
+                                    <img
+                                        src="assets/img/catfood-7.jpg"
+                                        alt="Catnip cho mèo dạng que BIOLINE Catnip Dental Stick
+                                    Thương hiệu BIOLINE"
+                                        class="catfood-item__img food-item__img"
+                                    />
+                                    <div class="food-item__cta">
+                                        <a href="#!" class="food-item__icon">
+                                            <i
+                                                class="fa-solid fa-cart-shopping food-item__cart"
+                                            ></i>
+                                            <span class="food-item__action-name"
+                                                >Tùy chọn</span
+                                            >
+                                        </a>
+                                        <a
+                                            href="#view-modal"
+                                            class="food-item__icon"
+                                        >
+                                            <i
+                                                class="fa-solid fa-eye food-item__view"
+                                            ></i>
+                                            <span class="food-item__action-name"
+                                                >Xem nhanh</span
+                                            >
+                                        </a>
+                                    </div>
+                                </div>
                                 <div class="catfood-item__info food-item__info">
                                     <div
                                         class="catfood-item__name line-clamp food-item__name"
@@ -1672,12 +2114,35 @@ Thương hiệu BIOLINE"
                                 </div>
                             </div>
                             <div class="cat-food__item food-item">
-                                <img
-                                    src="assets/img/catfood-8.jpg"
-                                    alt="Xúc xích cho mèo vị cá biển BIOLINE Cat Cod Sausage
-Thương hiệu BIOLINE"
-                                    class="catfood-item__img food-item__img"
-                                />
+                                <div class="food-item__thumbnail">
+                                    <img
+                                        src="assets/img/catfood-8.jpg"
+                                        alt="Xúc xích cho mèo vị cá biển BIOLINE Cat Cod Sausage
+                                    Thương hiệu BIOLINE"
+                                        class="catfood-item__img food-item__img"
+                                    />
+                                    <div class="food-item__cta">
+                                        <a href="#!" class="food-item__icon">
+                                            <i
+                                                class="fa-solid fa-cart-shopping food-item__cart"
+                                            ></i>
+                                            <span class="food-item__action-name"
+                                                >Tùy chọn</span
+                                            >
+                                        </a>
+                                        <a
+                                            href="#view-modal"
+                                            class="food-item__icon"
+                                        >
+                                            <i
+                                                class="fa-solid fa-eye food-item__view"
+                                            ></i>
+                                            <span class="food-item__action-name"
+                                                >Xem nhanh</span
+                                            >
+                                        </a>
+                                    </div>
+                                </div>
                                 <div class="catfood-item__info food-item__info">
                                     <div
                                         class="catfood-item__name line-clamp food-item__name"
@@ -1798,6 +2263,212 @@ Thương hiệu BIOLINE"
                                         >Man United</span
                                     >
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <fotter class="footer">
+                <div class="grid">
+                    <div class="grid-row">
+                        <div class="grip__coluim-2-4">
+                            <h4 class="footer-heading footer-heading__strong">
+                                Thông Tin Cửa Hàng
+                            </h4>
+                            <div class="footer-content">
+                                <p class="footer-introduce">
+                                    PawPaw là cửa hàng chuyên cung cấp thức ăn
+                                    và phụ kiện cho thú cưng tọa lạc tại Quận 5.
+                                    Đến với PawPaw, khách yêu shopping tận lực,
+                                    PawPaw tư vấn tận tâm.
+                                </p>
+                                <div class="footer-logo">
+                                    <a
+                                        href="http://online.gov.vn/Home/WebDetails/84413"
+                                        target="_blank"
+                                        rel="nofollow noreferrer"
+                                    >
+                                        <img
+                                            src="https://file.hstatic.net/1000300454/file/logo_bct_019590229b4c4dfda690236b67f7aff4.png"
+                                            alt="Bộ Công Thương"
+                                        />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grip__coluim-2-4">
+                            <h4 class="footer-heading footer-heading__strong">
+                                Hỗ Trợ Khách Hàng
+                            </h4>
+                            <ul class="footer-list">
+                                <li class="footer-item">
+                                    <a class="footer-item__link">Tìm Kiếm</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a class="footer-item__link">Giới Thiệu</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a class="footer-item__link"
+                                        >Chính Sách Bảo Mật</a
+                                    >
+                                </li>
+                                <li class="footer-item">
+                                    <a class="footer-item__link"
+                                        >Chính Sách Thanh Toán</a
+                                    >
+                                </li>
+                                <li class="footer-item">
+                                    <a class="footer-item__link"
+                                        >Chính Sách Giao Hàng</a
+                                    >
+                                </li>
+                                <li class="footer-item">
+                                    <a class="footer-item__link"
+                                        >Chính Sách Đổi Trả</a
+                                    >
+                                </li>
+                                <li class="footer-item">
+                                    <a class="footer-item__link"
+                                        >Hướng Dẫn Mua Hàng</a
+                                    >
+                                </li>
+                                <li class="footer-item">
+                                    <a class="footer-item__link"
+                                        >Điều Khoản Dịch Vụ</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="grip__coluim-2-4">
+                            <h4 class="footer-heading footer-heading__strong">
+                                Thông Tin Liên Hệ
+                            </h4>
+                            <ul class="footer-nolist">
+                                <li class="footer-item">
+                                    <a
+                                        class="footer-item__link footer-item_nolist"
+                                    >
+                                        <i
+                                            class="footer-item__icon fa-solid fa-location-dot"
+                                        ></i>
+                                        19 Hồ Biểu Chánh,Quận Phú Nhuận,Phường
+                                        12,TP-HCM
+                                    </a>
+                                </li>
+
+                                <li class="footer-item">
+                                    <a
+                                        class="footer-item__link footer-item_nolist"
+                                    >
+                                        <i
+                                            class="footer-item__icon fa-solid fa-square-phone"
+                                        ></i>
+                                        0867585946
+                                    </a>
+                                </li>
+
+                                <li class="footer-item">
+                                    <a
+                                        class="footer-item__link footer-item_nolist"
+                                    >
+                                        <i
+                                            class="footer-item__icon fa-solid fa-paper-plane"
+                                        ></i>
+                                        petshop@gmail.com
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="grip__coluim-2-4 grid__coluim-link">
+                            <h4 class="footer-heading footer-heading__strong">
+                                Theo Dõi Chúng Tôi
+                            </h4>
+                            <div class="footer-logo__link">
+                                <a class="footer-item__link">
+                                    <i
+                                        class="footer-item__link-icon fa-brands fa-facebook"
+                                    ></i>
+                                </a>
+
+                                <a class="footer-item__link">
+                                    <i
+                                        class="footer-item__link-icon fa-brands fa-instagram"
+                                    ></i>
+                                </a>
+
+                                <a class="footer-item__link">
+                                    <i
+                                        class="footer-item__link-icon fa-brands fa-youtube"
+                                    ></i>
+                                </a>
+
+                                <a class="footer-item__link">
+                                    <i
+                                        class="footer-item__link-icon fa-brands fa-twitter"
+                                    ></i>
+                                </a>
+                            </div>
+
+                            <div class="footer-pay">
+                                <div class="footer-heading">
+                                    <h4 class="footer-heading__pay">
+                                        Phương Thức Thanh Toán
+                                    </h4>
+                                </div>
+                                <img
+                                    class="footer-icon__pay"
+                                    src="//bizweb.dktcdn.net/100/501/740/themes/929449/assets/payment.png?1726189697911"
+                                    alt="Phương thức thanh toán"
+                                    width="276"
+                                    height="45"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fotter>
+            <div class="footer-last footer-container text-algin">
+                <p class="footer-last-heading">
+                    Copyright © 2024 .
+                    <a class="footer-last-heading footer-nolist">
+                        Antony PetShop
+                    </a>
+                    <a
+                        class="footer-last-heading footer-nolist"
+                        target="_blank"
+                    >
+                        Powered by 3Tl
+                    </a>
+                </p>
+            </div>
+
+            <!-- Main Category -->
+            <section class="product-category">
+                <div class="container">
+                    <div class="product-main">
+                        <div class="producut-main__sidebar">
+
+                        </div>
+                        <div class="product-main__content">
+                            <div class="product-main__heading">
+                                <div class="product-main__heading--tittle">
+                                    <h2>Kết Quả Tìm Kiếm Cho Từ Khóa: Thức Ăn</h2>
+                                    <p>Có 79 sản phẩm</p>
+                                </div>
+                            </div>
+                            <div class="product-main__sort">
+                                <div class="product-main__sort--label">
+                                    <p>Chế độ xem</p>
+                                </div>
+                                <div class="product-main__sort--view">
+                                    
+                                </div>
+                                <div class="product-main__sort--select"></div>
                             </div>
                         </div>
                     </div>
