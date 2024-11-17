@@ -1,0 +1,261 @@
+.btn-control-large{
+    background-color: var(--red);
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 0 20px;
+    width: auto !important;
+}
+
+.admin-control-right i {
+    margin-right: 5px;
+}
+.admin-control {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.admin-control-center {
+    flex: 1;
+}
+
+.admin-control-right {
+    display: flex;
+}
+.filter-date {
+    display: flex;
+    align-items: center;
+}
+.fillter-date>div:first-child {
+    margin-right: 20px;
+}
+
+.fillter-date>div>label {
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+.form-control-date {
+    margin: 0 10px;
+    background-color: #eee;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    height: 40px;
+}
+.btn-reset-order {
+    margin: 0 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    border-radius: 5px;
+    color: #333;
+    background: #f0f0f0;
+    transition: .3s;
+}
+.btn-reset-order:hover {
+    background: #333;
+    color: #fff;
+}
+
+.form-search {
+    display: flex;
+    justify-content: center;
+}
+
+.search-btn {
+    border: none;
+    outline: none;
+    font-size: 20px;
+    height: 40px;
+    padding: 0 15px;
+    color: var(--text-color);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+.form-search-input {
+    height: 40px;
+    outline: none;
+    border: none;
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    padding-left: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 75%;
+}
+
+.btn-control-large {
+    background: #333;
+    height: 40px;
+    color: #fff;
+    width: auto;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+/* ========= Table Users ========== */
+table {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+}
+thead {
+    background: #f0f0f0;
+}
+
+tbody>tr>td:first-child {
+    padding-left: 24px;
+}
+tbody>tr>td:nth-child(2) {
+    white-space: nowrap;
+    max-width: 614px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+tbody>tr>td:nth-child(3) {
+    padding-left: 60px;
+}
+th, td {
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+th {
+    color: #555;
+}
+
+td img {
+    position: absolute;
+    width: 40px;
+    height: auto;
+    bottom: 4px;
+}
+
+tr td:nth-child(5),
+tr td:nth-child(4){
+    padding-left: 26px;
+}
+tr td:nth-child(6) {
+    padding-right: 20px;
+}
+.status {
+    padding: 6px 10px;  
+    border-radius: 20px;
+    font-size: 1.4rem;
+    color: #fff;
+}
+.status-online {
+    background: #27ae60;
+}
+.status-blocked {
+    margin-left: 10px;
+    background: #f04e2e;
+}
+/* ======= Page Nav Product ========== */
+.page-nav {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: #f0f0f0;
+}
+.pages {
+    transform: translateX(78%);
+    margin-top: 26px;
+    display: flex;
+    align-items: center;
+}
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: .4s;
+}
+.page.previous-page {
+    opacity: .3;
+}
+.page.current-page {
+    border: 1px solid #000;
+}
+.page:hover:not(.current-page) {
+    background: #f0f0f0;
+}
+
+/* ========= Order stastical =========== */
+.order-statistical {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+}
+.order-statistical-item {
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgb(241, 241, 241) 0px 1px 5px 2px;
+}
+.order-statistical-item-desc {
+    margin-bottom: 6px;
+    font-size: 1.6rem;
+    color: rgb(136, 136, 136);;
+}
+.order-statistical-item-qty {
+    font-weight: 600;
+    font-size: 1.7rem;
+}
+
+
+/* ================== View Invoice ============= */
+.view-btn {
+    position: relative;
+    margin-left: 6px;
+    background: #eee;
+    padding: 5px 15px;
+    border-radius: 25px;
+    font-size: 1.8rem;
+}
+.view-action-name {
+    position: absolute;
+    top: -30px;
+    left: -19px;
+    font-size: 1.3rem;
+    text-align: center;
+    min-width: 60px;
+    white-space: nowrap;
+    height: 24px;
+    padding: 5px;
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+    transform: translateY(16px);
+    opacity: 0;
+    transition: 0.4s ease;
+}
+.view-action-name::before {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-top: 12px solid #333;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+.view-btn:hover .view-action-name {
+    opacity: 1;
+    transform: translateY(0px);
+}
