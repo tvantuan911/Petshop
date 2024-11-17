@@ -40,6 +40,9 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
+
+        <!-- AOS animation -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <body>
             <!-- Header -->
             <header class="header">
@@ -797,7 +800,7 @@
             <!-- Feature -->
             <div class="features container">
                 <div class="features-container">
-                    <div class="feature">
+                    <div class="feature" data-aos="fade-up" data-aos-delay="100">
                         <div class="feature__icon feature__icon-shipping">
                             <i class="fas fa-shipping-fast"></i>
                         </div>
@@ -806,14 +809,14 @@
                             Freeshop với hoá đơn trên 500K
                         </p>
                     </div>
-                    <div class="feature">
+                    <div class="feature" data-aos="fade-up" data-aos-delay="200">
                         <div class="feature__icon feature__icon-certificate">
                             <i class="fa-solid fa-medal"></i>
                         </div>
                         <h3 class="feature__tittle">Sản phẩm chất lượng</h3>
                         <p class="feature__desc">Đảm bảo hàng chính hãng</p>
                     </div>
-                    <div class="feature">
+                    <div class="feature" data-aos="fade-up" data-aos-delay="300">
                         <div class="feature__icon feature__icon-gift">
                             <i class="fas fa-gift"></i>
                         </div>
@@ -1482,7 +1485,7 @@
             </section>
 
             <!-- View -->
-            <!-- <div class="view-product-modal overlay" id="view-modal">
+            <div class="view-product-modal overlay" id="view-modal">
                 <a href="#!" class="view-product__close"></a>
                 <section class="view-modal">
                     <a href="#!" class="view-modal__close-btn">&times;</a>
@@ -1566,7 +1569,7 @@
                         </div>
                     </div>
                 </section>
-            </div> -->
+            </div>
 
             <!-- Food For Cat -->
             <section class="cat-food">
@@ -2366,6 +2369,12 @@
                     </a>
                 </p>
             </div>
+
+            <!-- JS Animation -->
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script>
+                AOS.init();
+            </script>
         </body>
         <script>
             function validateNumber(input) {
