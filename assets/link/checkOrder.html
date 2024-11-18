@@ -39,6 +39,8 @@
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
+        <!-- AOS animation -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <script>
         function validateNumber(input) {
@@ -987,10 +989,10 @@
         <!-- Recommend For You -->
         <section class="recommend-products">
             <div class="container">
-                <h3 class="recommend-products__tittle">GỢI Ý RIÊNG BẠN</h3>
+                <h3 class="recommend-products__tittle" data-aos="fade-left" data-aos-duration="1500">GỢI Ý RIÊNG BẠN</h3>
                 <div class="recommend-content">
                     <div class="recommend-list">
-                        <div class="recommend-item">
+                        <div class="recommend-item" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
                             <a href="/assets/link/afterDetail.html">
                                 <div class="recommend-item__thumbnail">
                                     <img
@@ -1047,7 +1049,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="recommend-item">
+                        <div class="recommend-item" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="400">
                             <a href="/assets/link/afterDetail.html">
                                 <div class="recommend-item__thumbnail">
                                     <img
@@ -1104,7 +1106,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="recommend-item">
+                        <div class="recommend-item" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="600">
                             <a href="/assets/link/afterDetail.html">
                                 <div class="recommend-item__thumbnail">
                                     <img
@@ -1161,7 +1163,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="recommend-item">
+                        <div class="recommend-item" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="800">
                             <a href="/assets/link/afterDetail.html">
                                 <div class="recommend-item__thumbnail">
                                     <img
@@ -1499,6 +1501,13 @@
             </p>
         </div>
 
+        <!-- JS Animation -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                once: "true",
+            });
+        </script>
         <script>
             document
                 .querySelector(".search-form__input")
