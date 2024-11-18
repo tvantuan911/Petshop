@@ -39,6 +39,8 @@
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
+        <!-- AOS animation -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <body>
         <!-- Header -->
@@ -630,10 +632,10 @@
         <!-- You'll like -->
         <section class="you-like">
             <div class="container">
-                <h3 class="you-like__tittle">Có thể bạn sẽ thích</h3>
+                <h3 class="you-like__tittle" data-aos="fade-left" data-aos-duration="1500">Có thể bạn sẽ thích</h3>
                 <div class="like-content">
                     <div class="like-list">
-                        <div class="like-item">
+                        <div class="like-item" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
                             <a href="/assets/link/detail.html">
                                 <div class="like-item__thumbnail">
                                     <img
@@ -682,7 +684,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="like-item">
+                        <div class="like-item" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="400">
                             <a href="/assets/link/detail.html">
                                 <div class="like-item__thumbnail">
                                     <img
@@ -731,7 +733,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="like-item">
+                        <div class="like-item" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="600">
                             <a href="/assets/link/detail.html">
                                 <div class="like-item__thumbnail">
                                     <img
@@ -780,7 +782,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="like-item">
+                        <div class="like-item" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="800">
                             <a href="/assets/link/detail.html">
                                 <div class="like-item__thumbnail">
                                     <img
@@ -1110,6 +1112,13 @@
             </p>
         </div>
 
+        <!-- JS Animation -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                once: "true",
+            });
+        </script>
         <script>
             document
                 .querySelector(".search-form__input")
