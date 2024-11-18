@@ -23,6 +23,8 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
+        <!-- AOS animation -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <body>
         <div class="container">
@@ -209,7 +211,7 @@
                 </div>
             </aside>
             <section class="content">
-                <h3 class="content-tittle">Quản Lý Khách Hàng</h3>
+                <h3 class="content-tittle" data-aos="fade-left" data-aos-duration="1500">Quản Lý Khách Hàng</h3>
                 <div class="admin-control">
                     <div class="admin-control-left">
                         <select name="tinh-trang-user" id="tinh-trang-user">
@@ -765,17 +767,15 @@
 
                 // Hiển thị hộp thoại xác nhận
                 const confirmed = confirm(`Bạn có chắc chắn muốn xóa người dùng: "${name}"?`);
-
-                // // Xử lý theo lựa chọn của người dùng
-                // if (confirmed) {
-                //     alert(`Người dùng "${name}" đã được xóa.`);
-                //     // Xóa dòng trong bảng
-                //     row.remove();
-                // } else {
-                //     alert(`Hủy xóa người dùng: "${name}".`);
-                // }
             });
         });
+        </script>
+        <!-- JS Animation -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                once: "true",
+            });
         </script>
     </body>
 </html>

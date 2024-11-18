@@ -41,6 +41,9 @@
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
+
+        <!-- AOS animation -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <body>
         <div class="container">
@@ -227,7 +230,7 @@
                 </div>
             </aside>
             <section class="content">
-                <h3 class="content-tittle">Thống Kê</h3>
+                <h3 class="content-tittle" data-aos="fade-left" data-aos-duration="1500">Thống Kê</h3>
                 <div class="admin-control">
                     <div class="admin-control-left">
                         <select name="the-loai" id="the-loai">
@@ -284,7 +287,7 @@
                     </div>
                 </div>
                 <div class="order-statistical">
-                    <div class="order-statistical-item">
+                    <div class="order-statistical-item" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
                         <div class="order-statistical-item-content">
                             <p class="order-statistical-item-desc">
                                 Sản phẩm được bán ra
@@ -311,7 +314,7 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="order-statistical-item">
+                    <div class="order-statistical-item" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="400">
                         <div class="order-statistical-item-content">
                             <p class="order-statistical-item-desc">
                                 Số lượng bán ra
@@ -338,7 +341,7 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="order-statistical-item">
+                    <div class="order-statistical-item" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="600">
                         <div class="order-statistical-item-content">
                             <p class="order-statistical-item-desc">Doanh Thu</p>
                             <strong class="order-statistical-item-qty"
@@ -505,5 +508,12 @@
                 </div>
             </section>
         </div>
+        <!-- JS Animation -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                once: "true",
+            });
+        </script>
     </body>
 </html>

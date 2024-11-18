@@ -23,6 +23,8 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
+        <!-- AOS animation -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <body>
         <div class="container">
@@ -206,7 +208,7 @@
                 </div>
             </aside>
             <section class="content">
-                <h3 class="content-tittle">Danh Sách Sản Phẩm</h3>
+                <h3 class="content-tittle" data-aos="fade-left" data-aos-duration="1500">Danh Sách Sản Phẩm</h3>
                 <div class="admin-control">
                     <div class="admin-control-left">
                         <select name="the-loai" id="the-loai">
@@ -1251,7 +1253,6 @@
                 </div>
             </div>
         </div>
-
         <script>
             const deleteButtons = document.querySelectorAll(".btn-delete");
 
@@ -1263,15 +1264,14 @@
                     const productName = productInfo.querySelector(".product-name").textContent.trim();
                     // Hiển thị hộp thoại confirm
                     const confirmed = confirm(`Bạn có chắc chắn muốn xóa sản phẩm?`);
-                    // Xử lý theo lựa chọn của người dùng
-                    // if (confirmed) {
-                    //     alert(`Sản phẩm "${productName}" đã được xóa.`);
-                    //     // Xóa phần tử (tùy chọn)
-                    //     // productInfo.remove();
-                    // } else {
-                    //     alert(`Hủy xóa sản phẩm: "${productName}".`);
-                    // }
                 });
+            });
+        </script>
+        <!-- JS Animation -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                once: "true",
             });
         </script>
     </body>

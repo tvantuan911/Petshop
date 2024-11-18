@@ -41,6 +41,9 @@
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
+
+        <!-- AOS animation -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <style>
         tr td:nth-child(5) {
@@ -240,7 +243,7 @@
                 </div>
             </aside>
             <section class="content">
-                <h3 class="content-tittle">Quản Lý Đơn Hàng</h3>
+                <h3 class="content-tittle" data-aos="fade-left" data-aos-duration="1500">Quản Lý Đơn Hàng</h3>
                 <div class="admin-control">
                     <div class="admin-control-left">
                         <select name="tinh-trang-user" id="tinh-trang-user">
@@ -803,5 +806,12 @@
                 </div>
             </div>
         </div>
+        <!-- JS Animation -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                once: "true",
+            });
+        </script>
     </body>
 </html>
