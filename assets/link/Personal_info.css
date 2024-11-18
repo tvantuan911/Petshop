@@ -481,6 +481,8 @@ a {
     color: red;
 }
 .cart-box__btn {
+    font-size: 1.6rem;
+    text-align: center;
     margin: 0 14px;
     margin-top: 16px;
     width: 94%;
