@@ -39,6 +39,8 @@
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
+        <!-- AOS animation -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <script>
         function validateNumber(input) {
@@ -766,7 +768,7 @@
         </section>
 
         <!-- View -->
-        <!-- <div class="view-product-modal overlay" id="view-modal">
+        <div class="view-product-modal overlay" id="view-modal">
             <a href="#!" class="view-product__close"></a>
             <section class="view-modal">
                 <a href="#!" class="view-modal__close-btn">&times;</a>
@@ -877,7 +879,7 @@
                     </div>
                 </div>
             </section>
-        </div> -->
+        </div>
 
         <!-- Review Product -->
         <section class="boxReview">
@@ -997,10 +999,10 @@
         <!-- Related Product -->
         <section class="related-products">
             <div class="container">
-                <h3 class="related-products__tittle">Sản Phẩm Liên Quan</h3>
+                <h3 class="related-products__tittle" data-aos="fade-left" data-aos-duration="1500">Sản Phẩm Liên Quan</h3>
                 <div class="related-content">
                     <div class="related-list">
-                        <div class="related-item">
+                        <div class="related-item" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
                             <a href="/assets/link/detail.html">
                                 <div class="related-item__thumbnail">
                                     <img
@@ -1052,7 +1054,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="related-item">
+                        <div class="related-item" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="400">
                             <a href="/assets/link/detail.html">
                                 <div class="related-item__thumbnail">
                                     <img
@@ -1104,7 +1106,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="related-item">
+                        <div class="related-item" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="600">
                             <a href="/assets/link/detail.html">
                                 <div class="related-item__thumbnail">
                                     <img
@@ -1156,7 +1158,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="related-item">
+                        <div class="related-item" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="800">
                             <a href="/assets/link/detail.html">
                                 <div class="related-item__thumbnail">
                                     <img
@@ -1375,6 +1377,13 @@
             </p>
         </div>
 
+        <!-- JS Animation -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                once: "true",
+            });
+        </script>
         <script>
             document
                 .querySelector(".search-form__input")
