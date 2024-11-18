@@ -39,6 +39,9 @@
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
+
+        <!-- AOS animation -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <script>
         function validateNumber(input) {
@@ -1182,10 +1185,10 @@
         <!-- You'll Like -->
         <section class="related-products">
             <div class="container">
-                <h3 class="related-products__tittle">Có Thể Bạn Sẽ Thích</h3>
+                <h3 class="related-products__tittle" data-aos="fade-up" data-aos-duration="1500">Có Thể Bạn Sẽ Thích</h3>
                 <div class="related-content">
                     <div class="related-list">
-                        <div class="related-item">
+                        <div class="related-item" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
                             <a href="/assets/link/detail.html">
                                 <div class="related-item__thumbnail">
                                     <img
@@ -1236,7 +1239,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="related-item">
+                        <div class="related-item" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="400">
                             <a href="/assets/link/detail.html">
                                 <div class="related-item__thumbnail">
                                     <img
@@ -1287,7 +1290,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="related-item">
+                        <div class="related-item" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="600">
                             <a href="/assets/link/detail.html">
                                 <div class="related-item__thumbnail">
                                     <img
@@ -1338,7 +1341,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="related-item">
+                        <div class="related-item" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="800">
                             <a href="/assets/link/detail.html">
                                 <div class="related-item__thumbnail">
                                     <img
@@ -1698,5 +1701,13 @@
                 }
             });
         </script>
-    </body>
+
+        <!-- JS Animation -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                once: "true",
+            });
+        </script>
+</body>
 </html>
