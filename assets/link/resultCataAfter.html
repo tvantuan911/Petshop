@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Kết quả tìm kiếm cho từ khóa: thức ăn</title>
+        <title>Thức ăn hạt cho chó - Antony Petshop</title>
         <link rel="stylesheet" href="/assets/css/reset.css" />
         <link rel="stylesheet" href="pageProduct.css" />
         <!-- Embed Fonts -->
@@ -306,6 +306,44 @@
             line-height: 36px;
             background: #060409;
             color: #fff;
+        }
+
+        select {
+            background-color: #eee;
+            color: #333;
+            font-weight: 500;
+            padding: 10px 50px 10px 10px;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+            margin-left: 10px;
+            height: 40px;
+            cursor: pointer;
+
+            appearance: none;
+            background-image: url(data:image/svg+xml,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M16.25%207.5L10%2013.75L3.75%207.5%22%20stroke%3D%22%232E2E2E%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%0A%3C%2Fsvg%3E%0A);
+            background-size: 16px;
+            background-repeat: no-repeat;
+            background-position: right 1rem center;
+        }
+
+        /* Breadcrumb */
+        .breadcrumb {
+            background: #f6f6f6;
+            height: 32px;
+            padding: 8px 0;
+        }
+        .breadcrumb-list {
+            list-style: none;
+            display: flex;
+            gap: 8px;
+            font-size: 1.4rem;
+        }
+        .breadcrumb-list .breadcrumb-item:first-child {
+            color: #5495ee;
+        }
+        .breadcrumb-item.active {
+            color: #b0b0b0;
         }
     </style>
     <body>
@@ -1210,6 +1248,20 @@
                 </li>
             </ul>
         </div>
+
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb">
+            <div class="container">
+                <ul class="breadcrumb-list">
+                    <li class="breadcrumb-item">
+                        <a href="/assets/link/afterLogin.html">Trang chủ </a>
+                    </li>
+                    <li class="breadcrumb-item active">
+                        <a href=""> / Hạt cho chó </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
         <!-- List Result -->
         <div class="collection-product">
@@ -2322,40 +2374,19 @@
                                 class="product-main__tittle"
                                 data-aos="fade-left"
                             >
-                                Kết Quả Tìm Kiếm Cho Từ Khóa: Thức Ăn
+                                Hạt cho chó
                             </h2>
-                            <p class="product-main__qnt-available">
-                                Có 101 Sản phẩm
-                            </p>
-                        </div>
-                        <div class="product-main__sort">
-                            <p class="product-main__sort-label">Chế độ xem</p>
-                            <div class="product-main__sort-view">
-                                <img
-                                    src="/assets/img/list.png"
-                                    alt="list"
-                                    class="sort-view__icon-list"
-                                />
-                                <img
-                                    src="/assets/img/grid.png"
-                                    alt="grid"
-                                    class="sort-view__icon-grid"
-                                />
-                            </div>
-                            <div class="product-main__sort-select">
-                                <span class="sort-sellect__content"
-                                    >Sắp xếp sản phẩm</span
-                                >
-                                <img
-                                    src="/assets/img/down-arrow.png"
-                                    alt="down-arrow"
-                                    class="sort-sellect__icon"
-                                />
-                                <ul class="sort-sellect-list">
-                                    <li>Giá cao thấp xuống cao</li>
-                                    <li>Giá thấp đến cao</li>
-                                </ul>
-                            </div>
+                            <select name="sort-product" id="sort-product">
+                                <option value="">Sản phẩm nổi bật</option>
+                                <option value="">Giá: Tăng dần</option>
+                                <option value="">Giá: Giảm dần</option>
+                                <option value="">Tên: A → Z</option>
+                                <option value="">Tên: Z → A</option>
+                                <option selected>Mới nhất</option>
+                                <option value="">Cũ nhất</option>
+                                <option value="">Bạn chạy nhất</option>
+                                <option value="">Tồn kho: Giảm dần</option>
+                            </select>
                         </div>
                         <div class="product-list">
                             <div
@@ -3574,6 +3605,7 @@
                 </a>
             </p>
         </div>
+
 
         <!-- JS Animation -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
