@@ -26,6 +26,14 @@
         <!-- AOS animation -->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
+    <style>
+        .upload-img-preview {
+            margin-left: 48px;
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+        }
+    </style>
     <body>
         <div class="container">
             <aside class="sidebar open">
@@ -981,7 +989,7 @@
                     hidden
                 />
 
-                <div class="modal-add-product">
+                <div class="modal-add-product" style="height: 500px;">
                     <label for="add-product" class="modal-close">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -1079,6 +1087,16 @@
                                     />
                                 </div>
                                 <div class="form-group">
+                                    <label for="quantity" class="form-label">Số lượng</label>
+                                    <input
+                                        type="text"
+                                        name="quantity"
+                                        id="quantity"
+                                        class="form-control"
+                                        placeholder="Nhập số lượng"
+                                    />
+                                </div>
+                                <div class="form-group">
                                     <label for="product-desc" class="form-label"
                                         >Mô tả</label
                                     >
@@ -1123,7 +1141,6 @@
                     class="edit-checkbox"
                     hidden
                 />
-
                 <div class="modal-edit-product">
                     <label for="edit-product" class="modal-close">
                         <svg
@@ -1146,11 +1163,11 @@
                     <div class="modal-content">
                         <form action="" class="edit-product-form">
                             <div class="modal-content-left">
-                                <!-- <img
-                                    src="/assets/img/blank-image.png"
+                                <img
+                                    src="/assets/img/pro-2.jpg"
                                     alt=""
                                     class="upload-img-preview"
-                                /> -->
+                                />
                                 <div class="form-group file">
                                     <label
                                         for="upload-image"
@@ -1192,7 +1209,7 @@
                                         id="product-name"
                                         class="form-control"
                                         placeholder="Nhập tên sản phẩm"
-                                        value="Khay Vệ Sinh Cho Mèo Hình Con Vịt 53x43x25cm"
+                                        value="Thức Ăn Hạt Mềm Cho Chó ANF- Soft Vị Gà 1.2KG"
                                     />
                                 </div>
                                 <div class="form-group">
@@ -1200,15 +1217,35 @@
                                         >Chọn loại</label
                                     >
                                     <select name="category" id="category">
-                                        <option value="1">Thức ăn</option>
+                                        <option value="1" selected>Thức ăn</option>
                                         <option value="2">Đồ chơi</option>
                                         <option value="3">Phụ kiện</option>
-                                        <option value="4" selected>
+                                        <option value="4">
                                             Đồ vệ sinh
                                         </option>
                                         <option value="5">Sức khỏe</option>
                                         <option value="6">Chăm nuôi</option>
                                     </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="product-name" class="form-label"
+                                        >Thêm size:</label
+                                    >
+                                    <br />
+                                    <div class="form-group__row" style="display: flex; justify-content: space-around;">
+                                        <div style="display: flex; align-items: center; gap: 10px;">
+                                            <label for="small size">500g</label>
+                                            <input type="checkbox" id="small size" checked />
+                                        </div>
+                                        <div style="display: flex; align-items: center; gap: 10px;">
+                                            <label for="medium size">1.2kg</label>
+                                            <input type="checkbox" id="medium size" checked />
+                                        </div>
+                                        <div style="display: flex; align-items: center; gap: 10px;">
+                                            <label for="large size">3kg</label>
+                                            <input type="checkbox" id="large size" checked />
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="new-price" class="form-label"
@@ -1225,7 +1262,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="product-desc" class="form-label">Mô tả</label>
-                                    <textarea name="prduct-desc" id="product-desc" class="product-desc" placeholder="Nhập mô tả sản phẩm...">Khay vệ sinh hinh con vịt là một sản phẩm thú vị và độc đáo dành cho những chú mèo. Khay dược làm bằng nhựa cao cấp, có thiết hình con vịt ngộ nghĩnh, bắt mắt. Khay có kích thước 53x43x25cm, phù hợp với những chú mèo có kích thước trung bình
+                                    <textarea name="prduct-desc" id="product-desc" class="product-desc" placeholder="Nhập mô tả sản phẩm...">Phương pháp đặc biệt “Water Tight” – Kín nước là phương pháp giữ chặt nước bên trong kết cấu của hạt, giúp nước không thoát ra ngoài để tạo độ ẩm, mềm xốp cho hạt và ức chế nấm mốc, vi sinh vật xuất hiện ở độ ẩm cao, đồng thời ngăn chặn nguyên nhân gây ra phân lỏng.Cá hồi và thịt gà giúp cải thiện khả năng tiêu hóa và tăng cảm giác ngon miệng
                                     </textarea>
                                 </div>
                                 <button class="edit-product-submit">
