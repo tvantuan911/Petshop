@@ -724,7 +724,7 @@
                 </ul>
             </div>
 
-            <!-- Flash Sale -->
+                        <!-- Flash Sale -->
             <div class="top-seller">
                 <div class="container">
                     <div class="top-seller__body">
@@ -734,19 +734,19 @@
                             </h2>
                             <div class="top-seller__count">
                                 <div class="top-seller__count-box">
-                                    <p class="number">0</p>
+                                    <p id="days" class="number">0</p>
                                     <span class="bottom">Ngày</span>
                                 </div>
                                 <div class="top-seller__count-box">
-                                    <p class="number">00</p>
+                                    <p id="hour" class="number">00</p>
                                     <span class="bottom">Giờ</span>
                                 </div>
                                 <div class="top-seller__count-box">
-                                    <p class="number">00</p>
+                                    <p id="minute" class="number">00</p>
                                     <span class="bottom">Phút</span>
                                 </div>
                                 <div class="top-seller__count-box">
-                                    <p class="number">00</p>
+                                    <p id="second" class="number">00</p>
                                     <span class="bottom">Giây</span>
                                 </div>
                             </div>
@@ -2666,6 +2666,36 @@
                     searchRecommend.style.display = "none";
                 }
             });
+
+                        function formatNumber (number) {
+                if (number < 10)
+                    return '0'+number;
+                return number;
+            }
+            var timeleft = 10000;
+
+            setInterval(() => {
+                --timeleft;
+                showTime();
+            }, 1000);
+            
+            function showTime () {
+                var time_left = timeleft;
+                var days_left = time_left / 86400;
+                time_left %= 86400;
+                var hour_left = time_left / 3600;
+                time_left %= 3600;
+                var minute_left = time_left / 60;
+                time_left %= 60;
+                let days_box = document.getElementById("days");
+                let hour_box = document.getElementById("hour");
+                let minute_box = document.getElementById("minute");
+                let second_box = document.getElementById("second");
+                days_box.innerText = formatNumber(parseInt(days_left));
+                hour_box.innerText = formatNumber(parseInt(hour_left));
+                minute_box.innerText = formatNumber(parseInt(minute_left));
+                second_box.innerText = formatNumber(parseInt(time_left));
+            }
         </script>
     </head>
 </html>
